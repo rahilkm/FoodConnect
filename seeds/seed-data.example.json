@@ -1,0 +1,93 @@
+{
+  "users": [
+    {
+      "role": "admin",
+      "fullName": "Admin User",
+      "email": "admin@foodconnect.local"
+    },
+    {
+      "role": "donor",
+      "fullName": "Riya Sharma",
+      "email": "riya@foodconnect.local"
+    },
+    {
+      "role": "ngo_manager",
+      "fullName": "Arjun Patil",
+      "email": "arjun@sevameals.local"
+    },
+    {
+      "role": "volunteer",
+      "fullName": "Sana Khan",
+      "email": "sana@foodconnect.local"
+    }
+  ],
+  "ngos": [
+    {
+      "name": "SevaMeals Trust",
+      "verificationStatus": "trusted_partner",
+      "area": "Dadar",
+      "needLevel": "high"
+    },
+    {
+      "name": "Dignity Ration Network",
+      "verificationStatus": "verified",
+      "area": "Kurla",
+      "needLevel": "medium"
+    },
+    {
+      "name": "Night Relief Mumbai",
+      "verificationStatus": "basic",
+      "area": "CST",
+      "needLevel": "high"
+    }
+  ],
+  "hotspots": [
+    {
+      "name": "Dadar Station East",
+      "status": "active",
+      "activeTimeWindows": [
+        "06:00-10:00",
+        "19:00-23:00"
+      ]
+    },
+    {
+      "name": "Kurla Flyover",
+      "status": "active",
+      "activeTimeWindows": [
+        "18:00-23:59"
+      ]
+    },
+    {
+      "name": "CST Night Cluster",
+      "status": "active",
+      "activeTimeWindows": [
+        "20:00-23:59"
+      ]
+    },
+    {
+      "name": "Bandra Market Back Lane",
+      "status": "low_activity",
+      "activeTimeWindows": [
+        "13:00-15:00"
+      ]
+    }
+  ],
+  "donations": [
+    {
+      "donationType": "food",
+      "foodType": "cooked_meals",
+      "quantity": 80,
+      "quantityUnit": "boxes",
+      "pickupRequired": true,
+      "status": "posted"
+    },
+    {
+      "donationType": "ration",
+      "foodType": "dry_ration",
+      "quantity": 25,
+      "quantityUnit": "kits",
+      "pickupRequired": false,
+      "status": "accepted"
+    }
+  ]
+}

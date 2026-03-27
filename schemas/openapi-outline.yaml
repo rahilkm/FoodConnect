@@ -1,0 +1,47 @@
+openapi: 3.1.0
+info:
+  title: FoodConnect API
+  version: 1.0.0
+servers:
+  - url: http://localhost:4000/api/v1
+paths:
+  /auth/login:
+    post:
+      summary: Login user
+  /donations:
+    post:
+      summary: Create donation
+    get:
+      summary: List donations
+  /donations/{id}/recommendations:
+    post:
+      summary: Generate NGO recommendations for donation
+  /donations/{id}/accept:
+    post:
+      summary: NGO accepts donation
+  /donations/{id}/assign-volunteer:
+    post:
+      summary: Assign volunteer
+  /hotspots:
+    get:
+      summary: List hotspots
+    post:
+      summary: Create hotspot
+  /hotspots/{id}/displace:
+    post:
+      summary: Mark hotspot displaced
+  /routes:
+    post:
+      summary: Create route
+    get:
+      summary: List routes
+  /routes/{id}/reroute:
+    post:
+      summary: Reroute route stops
+components:
+  schemas:
+    ApiResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
